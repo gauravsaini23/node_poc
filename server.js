@@ -1,12 +1,11 @@
-HOST = 'sharp-frost-7793.herokuapp.com/';
 var express = require("express");
-var server = express.createServer();
+var server = express.createServer(express.logger());
 server.enable("jsonp callback");
 var sys = require("sys"),
     url = require("url"),
     qs = require("querystring");
 
-server.listen(Number(process.env.PORT || PORT), HOST);
+server.listen(Number(process.env.PORT || 3000));
 
 var channel = new function () {
   var messages = [],
