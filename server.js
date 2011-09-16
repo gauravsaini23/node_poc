@@ -1,5 +1,4 @@
-HOST = '10.1.5.32'; // localhost
-PORT = 8001;
+HOST = 'sharp-frost-7793.herokuapp.com/';
 var express = require("express");
 var server = express.createServer();
 server.enable("jsonp callback");
