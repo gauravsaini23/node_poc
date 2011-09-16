@@ -63,6 +63,6 @@ server.get("/send", function (req, res) {
 });
 
 server.get("/", function (req, res) {
-  res.send('Got Here !! its working. now go to send');
+  res.send('Got Here !! its working. Now go to send');
 });
 
