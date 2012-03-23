@@ -1,6 +1,6 @@
 {
   "name": "node_poc",
-  "version": "0.4.7",
+  "version": "0.6.10",
   "dependencies": {
     "express": "2.4.6"
   }

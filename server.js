@@ -47,6 +47,7 @@ var channel = new function () {
   }, 3000);
 };
 
+//data to be sent to client browser
 server.get("/recv", function (req, res) {
   var since = parseInt(qs.parse(url.parse(req.url).query).since, 10);
   sys.puts("since" + since)
@@ -55,6 +56,7 @@ server.get("/recv", function (req, res) {
   });
 });
 
+//data to be sent by rails  server
 server.get("/send", function (req, res) {
   var id = qs.parse(url.parse(req.url).query).id;
   var text = qs.parse(url.parse(req.url).query).text;
